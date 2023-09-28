@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>alfredworkflow.naveenbharathi.npm-search</string>
+	<key>connections</key>
+	<dict>
+		<key>CD8B0843-794E-46D1-8D03-A8012CC67657</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9900D42F-E141-4452-B1EE-C24E9848EADE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Naveen Bharathi</string>
+	<key>description</key>
+	<string>Search for npm packages</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>npm search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>npm</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>eval $(/usr/libexec/path_helper -s)
+eval "$($SHELL -i -l -c 'echo -e "\n"PATH=\"$PATH:\$PATH\""\n"' 2&gt;/dev/null | grep "^PATH=")"
+export PATH
+
+if command -v deno &gt;/dev/null 2&gt;&amp;1; then
+	deno run --allow-net=api.skypack.dev index.ts "$1"
+else
+	echo $'{
+    "items":[
+      {
+        "title": "Couldn\'t find the `deno` binary",
+        "subtitle": "Symlink it to `/usr/local/bin`"
+      }
+    ]
+  }'
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>ex. npm react</string>
+				<key>title</key>
+				<string>Search for npm package</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CD8B0843-794E-46D1-8D03-A8012CC67657</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9900D42F-E141-4452-B1EE-C24E9848EADE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># alfredworkflow-npm-search
+
+Alfred workflow to search for npm package using Skypack API.
+
+
+
+## Prerequisites
+
+- The [deno](https://deno.land) runtime should have been installed
+
+
+
+## How to use
+
+1. Open Alfred App
+2. Type `npm`
+3. Pass a package name as the argument
+    - Example: `npm react`
+4. Wait for results
+5. Then:
+    - `Return` to open on npm website
+    - `cmd + c` to copy a link.
+
+
+
+## Project-type parameter
+
+1. Use `--[project-type]` to search for packages that belong to a project type
+    - Example: `npm material --react`
+
+Available project types are
+
+    1. angular
+    2. ember
+    3. lit-html
+    4. preact
+    5. react
+    6. svelte
+    7. vue
+
+
+
+# License
+
+MIT License
+
+Copyright (c) 2021 Naveen Bharathi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</string>
+	<key>uidata</key>
+	<dict>
+		<key>9900D42F-E141-4452-B1EE-C24E9848EADE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>235</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>CD8B0843-794E-46D1-8D03-A8012CC67657</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/naveen-bharathi/alfredworkflow-npm-search/</string>
+</dict>
+</plist>

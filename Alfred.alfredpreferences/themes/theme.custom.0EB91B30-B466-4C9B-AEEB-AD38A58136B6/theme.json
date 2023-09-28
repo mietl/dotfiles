@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 10,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFCC",
+        "font" : "FOT-TsukuARdGothic Std D",
+        "color" : "#FFFFFF99"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "FOT-TsukuARdGothic Std D",
+        "color" : "#FFFFFF99"
+      },
+      "backgroundSelected" : "#4C90FBFF",
+      "text" : {
+        "size" : 20,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "FOT-TsukuARdGothic Std D",
+        "color" : "#FFFFFFFF"
+      },
+      "iconPaddingHorizontal" : 15,
+      "roundness" : 15,
+      "paddingVertical" : 10,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#B5D5FFFF",
+      "paddingHorizontal" : 8,
+      "spacing" : 4,
+      "text" : {
+        "size" : 35,
+        "colorSelected" : "#000000FF",
+        "font" : "FOT-TsukuARdGothic Std D",
+        "color" : "#FEFFFEFF"
+      },
+      "background" : "#00000000",
+      "roundness" : 0,
+      "paddingVertical" : 5
+    },
+    "window" : {
+      "color" : "#37333DFF",
+      "paddingHorizontal" : 10,
+      "width" : 600,
+      "borderPadding" : 0,
+      "borderColor" : "#FDFFFD00",
+      "blur" : 0,
+      "roundness" : 15,
+      "paddingVertical" : 10
+    },
+    "credit" : "Platy Hsu",
+    "separator" : {
+      "color" : "#78767A00",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#78767AFF",
+      "thickness" : 5
+    },
+    "name" : "Custom Dark"
+  }
+}

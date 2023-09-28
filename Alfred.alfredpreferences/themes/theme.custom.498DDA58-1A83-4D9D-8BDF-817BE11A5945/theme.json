@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 10,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFCC",
+        "font" : "FOT-TsukuARdGothic Std D",
+        "color" : "#707D9399"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "FOT-TsukuARdGothic Std D",
+        "color" : "#22222266"
+      },
+      "backgroundSelected" : "#4C90FBFF",
+      "text" : {
+        "size" : 20,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "FOT-TsukuARdGothic Std D",
+        "color" : "#22222299"
+      },
+      "iconPaddingHorizontal" : 20,
+      "roundness" : 10,
+      "paddingVertical" : 10,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#4C90FBFF",
+      "paddingHorizontal" : 8,
+      "spacing" : 4,
+      "text" : {
+        "size" : 35,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "FOT-TsukuARdGothic Std D",
+        "color" : "#222222FF"
+      },
+      "background" : "#FEFFFECC",
+      "roundness" : 0,
+      "paddingVertical" : 5
+    },
+    "window" : {
+      "color" : "#FEFFFEFF",
+      "paddingHorizontal" : 10,
+      "width" : 600,
+      "borderPadding" : 0,
+      "borderColor" : "#FF426400",
+      "blur" : 0,
+      "roundness" : 10,
+      "paddingVertical" : 10
+    },
+    "credit" : "Dropout",
+    "separator" : {
+      "color" : "#C4C0CB00",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#C4C0CBFF",
+      "thickness" : 5
+    },
+    "name" : "Custom"
+  }
+}
