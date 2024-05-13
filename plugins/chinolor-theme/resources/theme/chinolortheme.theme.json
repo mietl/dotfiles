@@ -1,0 +1,22 @@
+{
+  "name": "Chinolor",
+  "author": "mietl",
+  "editorScheme": "/chinolor_theme.xml",
+  "dark": true,
+  "ui": {
+    "*": {
+      "selectionBackground": "#474b4c"
+    },
+    "Editor": {
+      "background": "#2b312c",
+      "foreground": "#e4dfd7"
+    },
+    "EditorTabs": {
+      "underlineColor": "#474b4c",
+      "inactiveUnderlineColor": "#2a2a2a"
+    },
+    "StatusBar": {
+      "borderColor": "red"
+    }
+  }
+}
