@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>4C724170-4FE9-4A7F-B94D-FFEA7DC05378</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>bilibili</string>
+			<key>text</key>
+			<string>哔哩哔哩：{query}</string>
+			<key>url</key>
+			<string>https://search.bilibili.com/all?keyword={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>FC548FD6-AAD7-4D05-9648-C284ACF24105</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>baidu</string>
+			<key>spaces</key>
+			<string>%20</string>
+			<key>text</key>
+			<string>百度一下：{query}</string>
+			<key>url</key>
+			<string>https://www.baidu.com/s?ie=utf-8&amp;wd={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
